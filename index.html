@@ -11,13 +11,13 @@ body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 </style>
 <body>
-  <h1>Hello Jovaan</h1>
+  <h1 id="test">Hello Jovaan</h1>
   <script>
     var myVar = setInterval(myTimer, 1000);
 
 function myTimer() {
   var d = new Date();
-  alert("Oh hi there Jovaan");
+  document.getElementById("test").innerHTML = d.toLocaleTimeString();
 }
     
   </script>
